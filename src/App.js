@@ -9,6 +9,11 @@ function App() {
 
   const actionsArray = [
     {
+      tooltip: "View User",
+      icon: rowData => <button style={{background:'blue',color:'#fff'}}>View User</button>,
+      onClick: (event, rowData) => hello(event, rowData),
+    },
+    {
       icon: "save",
       tooltip: "Save User",
       onClick: (event, rowData) => alert("You saved " + rowData.name),
